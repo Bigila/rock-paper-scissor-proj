@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title> Copy Rock Paper Game</title>
+ <link rel="stylesheet" href="style.css">
+   
+</head>                 
+
+<body>
+
+ <div style="margin-bottom: 20px;
+ font-size: 50px;
+ color:white;
+ font-weight: bold;">Rock Paper Scissor</div>   
+
+<div class="container">
+
+<div  ><button class="button1" onclick="
+playGame('Rock');
+
+    " ><img src="Images/Rock.png " alt="Rock" width="250px" height="250px" class="button1k"></button>
+</div>   
+
+<div style="position: relative;">
+<button class="button2" onclick="
+playGame('Paper');
+
+"><img src="Images/Paper.png " alt="Paper" width="250px" height="250px" class="button2k"></button>
+</div>
+
+
+<button class="button1" onclick="
+playGame('Scissor');
+"><img src="Images/Scissor.png " alt="Paper" width="250px" height="250px" class="button3k"></button>
+
+</div>
+
+<div id="showparty"></div>
+<div id="showbig"></div>
+
+
+
+<p id="showtime"></p>
+
+
+<button class="deltime" onclick="
+score.win = 0;
+score.lose = 0;
+score.tie = 0;
+function2();
+localStorage.removeItem('score');
+function3();">Reset Score</button>
+
+
+<button class="deltime" onclick="
+autoPlay();">Auto Play</button>
+
+
+
+
+
+<script src="vanila.js">
+
+
+
+</script>
+</body>
+</html>
